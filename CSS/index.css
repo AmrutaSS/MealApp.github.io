@@ -1,0 +1,355 @@
+/* This is an CSS code for a meal search application. 
+Author: Amruta Sangaonkar. */
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+/* Define CSS variables */
+:root{
+   /* define a variable for orange color */
+  --orange : #ff7800;
+  /* define a variable for black color */
+  --black : #130f40;
+  /* define a variable for a light gray color */
+  --light-color : #666;
+  /* define a variable for a box shadow */
+  --box-shadow : 0 .5rem 1rem rgba(0,0,0,.1);
+  /* define a variable for an outline on hover */
+  --outline-hover : .2rem solid var(--black);
+}
+
+/* Set default styles for all elements */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   /* set a default font family for all elements */
+  font-family: 'Poppins',sans-serif;
+  /* remove outline for all elements */
+  outline: none;
+  /* remove border for all elements */
+  border: none;
+  /* remove text decoration for all elements */
+  text-decoration: none;
+   /* set text transform to capitalize for all elements */
+  text-transform: capitalize;
+  /* set transition effect for all elements */
+  transition: all .2s linear;
+}
+
+/* Set the base font size for the document */
+html{
+  /* set the base font size for the document */
+  font-size: 62.5%;
+  /* hide horizontal scrollbar */
+  overflow-x: hidden;
+  /* add smooth scrolling */
+  scroll-behavior: smooth;
+  /* set padding top for smooth scrolling */
+  scroll-padding-top: 7rem;
+}
+
+/* Set background color for the body */
+body{
+  /* set a background color for the body */
+  background: #eee;
+}
+
+/* Define styles for links */
+a{
+  /* set a font size for links */
+  font-size: 2rem;
+  /* remove underline for links */
+  text-decoration: none;
+  /* set text color for links */
+  color: var(--black);
+  /* set font weight for links */
+  font-weight: bold;
+  /* set cursor to pointer for links */
+  cursor: pointer;
+}
+
+/* Set styles for links on hover */
+a:hover{
+  /* set text color for links on hover */
+  color: #ff7800;
+}
+
+/* Define styles for the header section */
+.header {
+  /* set a font size for the header section */
+  font-size: 2.5rem;
+  /* set position to relative for the header section */
+  position: relative;
+  /* set a minimum height for the header section */
+  min-height: 25vh;
+  /* set background position to center */
+  background-position: center;
+  /* do not repeat background */
+  background-repeat: no-repeat;
+  /* set background size to cover */
+  background-size: cover;
+  /* set text color for the header section */
+  color: var(--black);
+}
+
+/* Define styles for the container element */
+.container {
+  /* set width to 100% for the container element */
+  width: 100%;
+}
+
+/* Define styles for the navigation bar */
+.nav {
+  /* set box shadow for the navigation bar */
+  box-shadow: var(--box-shadow);
+  /* set a background color for the navigation bar */
+  background-color: #fff;
+  /* set a minimum height for the navigation bar */
+  min-height: 8vh;
+  /* set display to flex for the navigation bar */
+  display: flex;
+  /* set horizontal spacing between the items */
+  justify-content: space-around;
+  /* align items to the center vertically */
+  align-items: center;
+}
+
+/* Define styles for navigation items */
+.nav-items {
+  /* set margin around navigation items */
+  margin: 1rem;
+  /* set width for navigation items */
+  width: 40%;
+  /* set display property to flex for navigation items */
+  display: flex;
+  /* remove bullet points from navigation items */
+  list-style-type: none;
+  /* distribute navigation items evenly */
+  justify-content: space-around;
+}
+
+/* Define styles for the meal section */
+.section-meal {
+  /* center align the content inside the meal section */
+  text-align: center;
+}
+
+/* Define styles for the meal section heading */
+.section-meal h2{
+  /* set font size for meal section heading */
+  font-size: 2.5rem;
+  /* set font color for meal section heading */
+  color: #ff7800;
+}
+
+/* Define styles for the meal search form */
+.form-meal {
+  /* set minimum height for meal search form */
+  min-height: 5vh;
+  /* set display property to flex for meal search form */
+  display: flex;
+  /* center align content inside meal search form */
+  justify-content: center;
+  /* set margin on top of meal search form */
+  margin-top: 1rem;
+}
+
+/* Define styles for the meal search input */
+.form-meal input {
+  /* set minimum height for meal search input */
+  min-height: 100%;
+  /* set margin on right side of meal search input */
+  margin-right: 1rem;
+}
+
+/* Set placeholder color for search input */
+::placeholder{
+  /* set color for placeholder text inside meal search input */
+  color: rgba(4, 4, 52, 0.528);
+}
+
+/* Define styles for the meal search text input */
+.form-meal input[type="text"] {
+  /* set font color for meal search text input */
+  color: var(--black);
+  /* set font weight for meal search text input */
+  font-weight: bold;
+  /* remove border around meal search text input */
+  border: none; 
+  /* remove margin around meal search text input */
+  margin: 0;
+  /* set margin on bottom of meal search text input */
+  margin-bottom: 5rem;
+   /* set background color for meal search text input */
+  background: rgba(136, 133, 133, 0.423);
+  /* set width for meal search text input */
+  width: 35%;
+  /* set padding for meal search text input */
+  padding: 0.8rem;
+  /* set font size for meal search text input */
+  font-size: 1.5rem;
+  /* set font weight for meal search text input */
+  font-weight: 400;
+  /* set border radius for bottom-left corner of meal search text input */
+  border-bottom-left-radius: 1rem;
+  /* set border radius for top-left corner of meal search text input */
+  border-top-left-radius: 1rem;
+  /* remove outline around meal search text input */
+  outline: none;
+  /* add box shadow to meal search text input */
+  box-shadow: var(--box-shadow);
+}
+
+#search-button{
+   /* Margin to the right of the element */
+   margin-right: 1rem;
+   /* Margin to the bottom of the element */
+   margin-bottom: 5rem;
+   /* Color of the element */
+   color: var(--black);
+   /* Background color of the element */
+   background: none;
+   /* Remove border from element */
+   border: none; 
+   /* Set cursor to pointer */
+   cursor: pointer;
+   /* Background color of element when it is transparent */
+   background: rgba(136, 133, 133, 0.423);
+   /* Rounded bottom right corner of the element */
+   border-bottom-right-radius: 1rem;
+   /* Rounded top right corner of the element */
+   border-top-right-radius: 1rem;
+   /* Remove outline around the element */
+   outline: none;
+   /* Font size of the element */
+   font-size: 1.5rem;
+   /* Font weight of the element */
+   font-weight: 400;
+   /* Padding inside the element */
+   padding: 0.8rem;
+   /* Transition effect when element is changed */
+   transition: all 0.3s ease;
+}
+
+/* Style for hover effect on search button */
+#search-button:hover {
+  /* Color of element on hover */
+  color: #ff7800;
+}
+
+/* Style for icon in search button */
+i {
+  /* Disable pointer events on element */
+  pointer-events: none;
+}
+
+/* Style for card */
+.card {
+  /* Font size of the element */
+  font-size: 1.5rem;
+  /* Margin around the element */
+  margin: 2.5%;
+  /* Width of the element */
+  width:20%; 
+  /* Rounded corners of the element */
+  border-radius: 5px;
+  /* Overflow behaviour when content exceeds element */
+  overflow: hidden;
+  /* Box shadow effect around the element */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Display mode of the element */
+  display: inline-block;
+  /* Vertical alignment of the element */
+  vertical-align: top;
+}
+
+/* Style for image in card */
+.card img {
+  /* Set width of image to 100% */
+  width: 100%;
+  /* Set height of image to auto */
+  height: auto;
+}
+
+/* Style for content in card */
+.card-content {
+  /* Padding around content */
+  padding: 10%;
+  /* Text alignment within content */
+  text-align: center;
+}
+
+/* Style for heading in card content */
+.card-content h3 {
+  /* Font size of heading */
+  font-size: 1.5rem;
+  /* Margin below heading */
+  margin-bottom: 10px;
+}
+
+/* Style for paragraph in card content */
+.card-content p {
+  /* Font size of paragraph */
+  font-size: 1rem;
+  /* Margin below paragraph */
+  margin-bottom: 20px;
+}
+
+/* Style for button to view more information */
+.btn-view {
+   /* Font size of button */
+  font-size: 1.8rem;
+  /* add some padding */
+  padding: 10px;
+  /* change text color to var(--black) */
+  color: var(--black);
+   /* Set cursor to pointer */
+  cursor: pointer;
+}
+
+/* Style for hover effect on view button */
+.btn-view:hover {
+  /* change background color on hover */
+  color: #ff7800;
+}
+
+/* Style for button to add to favorites */
+.btn-favorite {
+  cursor: pointer;
+  /* margin-left: 12rem; */
+  font-size: 2rem;
+  /* add some padding */
+  padding: 10px;
+  /* change text color to var(--black) */
+  color: red;
+  /* add a transition for hover effect */
+  transition: background-color 0.3s ease-in-out;
+  /* margin-left: 10rem; */
+}
+
+/* Style for hover effect on favorite button */
+.btn-favorite:hover {
+  /* change background color on hover */
+  color: red; 
+} 
+
+/* This is a media query that targets screens with a maximum width of 768 pixels */
+@media only screen and (max-width: 768px) {
+  /* This styles the card class when the screen width is less than or equal to 768 pixels */
+  .card {
+    width: 45%;
+    margin: 2.5%;
+
+  /* This styles the card image when the screen width is less than or equal to 768 pixels */
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+} 
+
+
+

@@ -1,0 +1,64 @@
+<!--
+This is an HTML document for a meal search application. 
+Author: Amruta Sangaonkar.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Set the compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the viewport to adjust to the device width and initial scale to 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the title of the webpage -->
+    <title>MEAL</title>
+
+    <!-- Import font-awesome CSS library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Import font-awesome CSS library again for redundancy -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Import custom stylesheet for the application -->
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <!-- Import JavaScript file for the application and defer its execution until the document is parsed -->
+    <script src="./JS/index.js" defer></script>
+</head>
+<body>
+
+  <!-- Header section -->
+  <header class="header">
+      <nav class="nav container">
+        <h1 class="logo">Fooddy</h1>
+        <!-- Navigation menu items -->
+        <ul class="nav-items">
+          <li class="nav-item"><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a href="./favorite.html"><i class="fa-solid fa-heart"></i> Favorite</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Section for the meal search bar -->
+    <section class="section-meal container">
+      <h2>Search Your Meal Here</h2>
+      <!-- Form for the meal search bar -->
+      <form class="form-meal">
+        <input type="text" name="" id="search-input" placeholder="Search Your Meal" />
+        
+        <!-- Button to submit the search query -->
+        <button id="search-button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      </section>
+
+    <!-- Section to display search results -->
+    <section class="section-cards container">
+      <!-- results will be displayed here -->
+
+    </section>
+</body>
+</html>
